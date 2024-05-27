@@ -1,0 +1,63 @@
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #9E9C9C;
+}
+
+a {
+    color: inherit; /* Устанавливает цвет текста в зависимости от цвета родительского элемента */
+    text-decoration: none; /* Убирает подчеркивание текста */
+    background: none; /* Убирает фоновый цвет */
+    border: none; /* Убирает границы */
+    outline: none; /* Убирает обводку, которая появляется при фокусе */
+}
+
+@font-face {
+    font-family: Nunito-Bold;
+    src: url("fonts/nunito/Nunito-Bold.ttf");
+}
+
+@font-face {
+    font-family: Montserrat-Regular;
+    src: url("fonts/montserrat/static/Montserrat-Regular.ttf");
+}
+
+.main-wrapper {
+    position: relative;
+    width: 375px;
+    height: 615px;
+    background: #ffffff;
+
+    /*margin: 100px auto 0;*/
+    padding: 24px;
+}
+
+.order_history {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    font-family: Nunito-Bold, sans-serif;
+    font-size: 16px;
+
+    margin-bottom: 24px;
+}
+
+.order-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: Montserrat-Regular, sans-serif;
+    font-size: 16px;
+
+    margin-bottom: 16px;
+    padding: 17px 24px 19px 24px;
+
+    box-shadow: 0 2px 4px 0 rgba(3, 2, 41, 0.07);
+    border-radius: 8px;
+    /*border: 1px solid black;*/
+}
